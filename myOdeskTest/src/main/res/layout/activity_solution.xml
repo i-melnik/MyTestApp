@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:example="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_activity_prifle"
+    android:background="@drawable/light_blue_background"
+    android:orientation="vertical" >
+    
+	<Button 
+	        android:id="@+id/solution_header"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/header_text_size"
+	        android:background="@android:color/transparent"
+	        android:paddingBottom="5dp"
+	        android:text="@string/solutions_header"/>
+
+	<ScrollView
+	    
+	    android:layout_width="fill_parent"
+	    android:layout_height="match_parent"
+	    
+	    android:scrollbars="none" >
+	 
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:orientation="vertical" >
+	 
+	        <com.melnik.odesktest.layout.ExpandablePanel
+	            android:id="@+id/foo"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            example:animationDuration="500"
+	            example:collapsedHeight="0dp"
+	            example:content="@+id/value_business"
+	            example:handle="@+id/expand_business" >
+	 
+	            <RelativeLayout
+			        android:id="@+id/expand_business"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:background="@color/light_blue"
+			        android:weightSum="1" >
+			
+			        <ImageView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentLeft="true"
+			            android:layout_alignParentTop="true"
+			            android:src="@drawable/ww" />
+			
+			        <Button
+			            android:id="@+id/button_business"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_centerHorizontal="true"
+			            android:layout_centerVertical="true"
+			            android:layout_marginLeft="5dp"
+			            android:layout_marginRight="5dp"
+			            android:background="@color/light_blue"
+			            android:textSize="20sp"
+			            android:text="@string/business"
+			            android:textColor="@color/white" />
+			
+			        <ImageView
+			            android:id="@+id/business_minus"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentRight="true"
+			            android:layout_alignParentTop="true"
+			            android:src="@drawable/plus" />
+			        
+			    </RelativeLayout>
+			    
+	            <RelativeLayout
+	                android:id="@+id/value_business"
+	                android:layout_width="fill_parent"
+	                android:layout_height="match_parent"
+	                android:background="@color/white" >
+	 
+	                <TextView
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/business_text" />
+	 
+	            </RelativeLayout>  
+	            
+	        </com.melnik.odesktest.layout.ExpandablePanel>
+	            
+	        <com.melnik.odesktest.layout.ExpandablePanel
+	            android:id="@+id/foo1"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            example:animationDuration="500"
+	            example:collapsedHeight="0dp"
+	            example:content="@+id/value_individual"
+	            example:handle="@+id/expand_individual" >
+	 
+	            <RelativeLayout
+			        android:id="@+id/expand_individual"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:background="@color/light_blue"
+			        android:layout_marginTop="10dp"
+			        android:weightSum="1" >
+			
+			        <ImageView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentLeft="true"
+			            android:layout_centerVertical="true"
+			            android:src="@drawable/abs__ic_voice_search" />
+			
+			        <Button
+			            android:id="@+id/button_individual"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginLeft="5dp"
+			            android:layout_marginRight="5dp"
+			            android:layout_centerHorizontal="true"
+			            android:layout_centerVertical="true"
+			            android:textSize="20sp"
+			            android:background="@color/light_blue"
+			            android:text="@string/individual"
+			            android:textColor="@color/white" />
+			
+				    <ImageView
+				        android:id="@+id/individual_minus"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_alignParentRight="true"
+				        android:layout_alignParentTop="true"
+				        android:src="@drawable/plus" />
+				        
+				</RelativeLayout>
+	            
+	            <RelativeLayout
+	                android:id="@+id/value_individual"
+	                android:layout_width="fill_parent"
+	                android:layout_height="match_parent"
+	                android:background="@color/white" >
+	 
+	                <TextView
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/individual_text" />
+	 
+	            </RelativeLayout>  
+	            
+	         </com.melnik.odesktest.layout.ExpandablePanel>
+	    </LinearLayout>	 
+	</ScrollView>
+</LinearLayout>

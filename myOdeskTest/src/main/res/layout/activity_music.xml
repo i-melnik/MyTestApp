@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>   
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentTop="true"
+     android:weightSum="1"
+     android:orientation="vertical" >
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp" 
+		android:layout_weight="0.8">
+    	
+	    <ListView
+		    android:id="@+id/music_list"
+		    android:cacheColorHint="#000000"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" >
+		</ListView>
+    </LinearLayout>
+	    
+	    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:layout_weight="0.2">
+        
+        <ImageButton
+		    android:id="@+id/music_previous"
+		    android:layout_width="wrap_content"
+		    android:layout_height="fill_parent"
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignParentLeft="true"
+		    android:src="@android:drawable/ic_media_previous" />
+         
+		<ImageButton
+		    android:id="@+id/music_play"
+		    android:layout_width="wrap_content"
+		    android:layout_height="fill_parent"
+		    android:layout_alignParentBottom="true"
+		    android:layout_centerHorizontal="true"
+		    android:src="@android:drawable/ic_media_play" />
+
+		<ImageButton
+		    android:id="@+id/music_next"
+		    android:layout_width="wrap_content"
+		    android:layout_height="fill_parent"
+		    android:src="@android:drawable/ic_media_next" />
+        
+	</LinearLayout>
+
+</LinearLayout>
+

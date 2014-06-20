@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:example="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_activity_prifle"
+    android:background="@drawable/light_blue_background"
+    android:orientation="vertical" >
+    
+	<Button 
+	        android:id="@+id/faq_header"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/white"
+            android:background="@android:color/transparent"
+	        android:textSize="@dimen/header_text_size"
+	        android:paddingBottom="5dp"
+	        android:text="@string/faq_header"/>
+
+	<ScrollView
+	    
+	    android:layout_width="fill_parent"
+	    android:layout_height="match_parent"
+	    
+	    android:scrollbars="none" >
+	 
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:orientation="vertical" >
+	 
+	        <com.melnik.odesktest.layout.ExpandablePanel
+	            android:id="@+id/faq_internet_layout"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            example:animationDuration="500"
+	            example:collapsedHeight="0dp"
+	            example:content="@+id/faq_internet_value"
+	            example:handle="@+id/faq_internet_expand" >
+	 
+	            <RelativeLayout
+			        android:id="@+id/faq_internet_expand"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:background="@color/light_blue"
+			        android:weightSum="1" >
+			
+			        <ImageView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentLeft="true"
+			            android:layout_alignParentTop="true"
+			            android:src="@drawable/ww" />
+			
+			        <Button
+			            android:id="@+id/button_internet"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_centerHorizontal="true"
+			            android:layout_centerVertical="true"
+			            android:layout_marginLeft="5dp"
+			            android:layout_marginRight="5dp"
+			            android:background="@color/light_blue"
+			            android:textSize="20sp"
+			            android:text="@string/internet"
+			            android:textColor="@color/white" />
+			
+			        <ImageView
+			            android:id="@+id/internet_minus"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentRight="true"
+			            android:layout_alignParentTop="true"
+			            android:src="@drawable/plus" />
+			        
+			    </RelativeLayout>
+			    
+	            <RelativeLayout
+	                android:id="@+id/faq_internet_value"
+	                android:layout_width="fill_parent"
+	                android:layout_height="match_parent"
+	                android:background="@color/white" >
+	 
+	                <TextView
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/internet_text" />
+	 
+	            </RelativeLayout>  
+	            
+	        </com.melnik.odesktest.layout.ExpandablePanel>
+	            
+	        <com.melnik.odesktest.layout.ExpandablePanel
+	            android:id="@+id/faq_voice_layout"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            example:animationDuration="500"
+	            example:collapsedHeight="0dp"
+	            example:content="@+id/faq_value_voice"
+	            example:handle="@+id/faq_expand_voice" >
+	 
+	            <RelativeLayout
+			        android:id="@+id/faq_expand_voice"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:background="@color/light_blue"
+			        android:layout_marginTop="10dp"
+			        android:weightSum="1" >
+			
+			        <ImageView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentLeft="true"
+			            android:layout_centerVertical="true"
+			            android:src="@drawable/abs__ic_voice_search" />
+			
+			        <Button
+			            android:id="@+id/button_voice"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginLeft="5dp"
+			            android:layout_marginRight="5dp"
+			            android:layout_centerHorizontal="true"
+			            android:layout_centerVertical="true"
+			            android:textSize="20sp"
+			            android:background="@color/light_blue"
+			            android:text="@string/voice"
+			            android:textColor="@color/white" />
+			
+				    <ImageView
+				        android:id="@+id/voice_minus"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_alignParentRight="true"
+				        android:layout_alignParentTop="true"
+				        android:src="@drawable/plus" />
+				        
+				</RelativeLayout>
+	            
+	            <RelativeLayout
+	                android:id="@+id/faq_value_voice"
+	                android:layout_width="fill_parent"
+	                android:layout_height="match_parent"
+	                android:background="@color/white" >
+	 
+	                <TextView
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/voice_text" />
+	 
+	            </RelativeLayout>  
+	            
+	         </com.melnik.odesktest.layout.ExpandablePanel>
+	         
+	        <com.melnik.odesktest.layout.ExpandablePanel
+	            android:id="@+id/faq_mobile_layout"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            example:animationDuration="500"
+	            example:collapsedHeight="0dp"
+	            example:content="@+id/faq_value_mobile"
+	            example:handle="@+id/faq_expand_mobile" >
+	 
+	            <RelativeLayout
+			        android:id="@+id/faq_expand_mobile"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:background="@color/light_blue"
+			        android:layout_marginTop="10dp"
+			        android:weightSum="1" >
+			
+			        <ImageView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentLeft="true"
+			            android:layout_centerVertical="true"
+			            android:src="@drawable/abs__ic_voice_search" />
+			
+			        <Button
+			            android:id="@+id/button_mobile"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginLeft="5dp"
+			            android:layout_marginRight="5dp"
+			            android:layout_centerHorizontal="true"
+			            android:layout_centerVertical="true"
+			            android:textSize="20sp"
+			            android:background="@color/light_blue"
+			            android:text="@string/mobile"
+			            android:textColor="@color/white" />
+			
+				    <ImageView
+				        android:id="@+id/mobile_minus"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_alignParentRight="true"
+				        android:layout_alignParentTop="true"
+				        android:src="@drawable/plus" />
+				        
+				</RelativeLayout>
+	            
+	            <RelativeLayout
+	                android:id="@+id/faq_value_mobile"
+	                android:layout_width="fill_parent"
+	                android:layout_height="match_parent"
+	                android:background="@color/white" >
+	 
+	                <TextView
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/mobile_text" />
+	 
+	            </RelativeLayout>  
+	            
+	         </com.melnik.odesktest.layout.ExpandablePanel>
+	    </LinearLayout>	 
+	</ScrollView>
+</LinearLayout>

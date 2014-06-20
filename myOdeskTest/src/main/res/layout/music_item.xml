@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    android:orientation="horizontal"
+    android:weightSum="1" >
+
+    <LinearLayout
+	    android:layout_width="0dp"
+	    android:layout_weight="0.6"
+	    android:layout_height="match_parent"
+	    android:gravity="left"
+	    android:orientation="vertical" >
+	    <TextView
+	        android:id="@+id/music_item_title"
+	        android:layout_width="wrap_content"
+	        android:paddingLeft="5dp"
+	        android:layout_height="wrap_content"
+	        android:textSize="15sp"
+	        android:textColor="@color/white" />
+	
+	    <TextView
+	        android:id="@+id/music_item_name"
+	        android:layout_width="wrap_content"
+	        android:paddingLeft="5dp"
+	        android:layout_height="wrap_content"
+	        android:textSize="15sp"
+	        android:textColor="@color/white" />
+
+	</LinearLayout>
+	
+    <LinearLayout
+	    android:layout_width="0dp"
+	    android:layout_weight="0.4"
+	    android:gravity="right"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+	    <TextView
+	        android:id="@+id/music_item_artist"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingRight="5dp"
+	        android:textSize="15sp"
+	        android:textColor="@color/white" />
+	
+	    <TextView
+	        android:id="@+id/music_item_album"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingRight="5dp"
+	        android:textSize="15sp"
+	        android:textColor="@color/white" />
+
+	</LinearLayout>
+</LinearLayout>

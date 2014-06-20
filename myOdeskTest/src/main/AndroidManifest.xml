@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.melnik.odesktest" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <permission
+        android:name="com.melnik.odesktest.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.melnik.odesktest.permission.MAPS_RECEIVE"/>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <meta-data
+    		android:name="com.google.android.gms.version"
+    		android:value="@integer/google_play_services_version" />
+        
+        <meta-data
+        	android:name="com.google.android.maps.v2.API_KEY"
+        	android:value="AIzaSyDuDZzNY64GbEd2cU1kQFp6l0UBU6WKCsc"/>
+        
+        <uses-library android:name="com.google.android.maps" />
+        <service android:name="com.melnik.odesktest.service.MusicService" />
+        <activity
+            android:name=".MainMenuActivity"
+            android:label="@string/app_name">
+            <!-- android:launchMode="singleTask" --> 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name=".ProfileActivity">
+        </activity>
+        <activity
+            android:name=".LoginActivity">
+        </activity>
+        <activity
+            android:name=".SolutionActivity">
+        </activity>
+        <activity
+            android:name=".OfferActivity">
+        </activity>
+        <activity
+            android:name=".FaqActivity">
+        </activity>
+        <activity
+            android:name=".StoreFinderActivity">
+        </activity>
+        <activity
+            android:name=".ContactUsActivity">
+        </activity>
+        <activity
+            android:name=".MusicActivity">
+        </activity>
+    </application>
+
+</manifest>

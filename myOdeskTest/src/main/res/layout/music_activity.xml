@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/light_blue_background"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.85"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/fragment_music_album"
+            android:name="com.melnik.odesktest.fragment.MusicAlbumFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/music_album_fragment" />
+
+        <fragment
+            android:id="@+id/fragment_music_composition"
+            android:name="com.melnik.odesktest.fragment.MusicCompositionFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/music_composition_fragment" />
+
+        <fragment
+            android:id="@+id/fragment_music_folder"
+            android:name="com.melnik.odesktest.fragment.MusicFolderFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/music_folder_fragment" />
+
+        <fragment
+            android:id="@+id/fragment_music_play"
+            android:name="com.melnik.odesktest.fragment.MusicPlayFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/music_play_fragment" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_weight="0.15" >
+
+        <ImageButton
+            android:id="@+id/btn_music_album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_album" />
+
+        <ImageButton
+            android:id="@+id/btn_music_composition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/music_item" />
+
+        <ImageButton
+            android:id="@+id/btn_music_composition_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_list" />
+
+        <ImageButton
+            android:id="@+id/btn_music_folder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_music_folder" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/myOdeskTest/myOdeskTest.iml" filepath="$PROJECT_DIR$/myOdeskTest/myOdeskTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/odeskTestApp.iml" filepath="$PROJECT_DIR$/odeskTestApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/slidingMenuMaster/slidingMenuMaster.iml" filepath="$PROJECT_DIR$/slidingMenuMaster/slidingMenuMaster.iml" />
+    </modules>
+  </component>
+</project>
+
